@@ -380,7 +380,7 @@ input::placeholder {
 }
 
 .left_title{
-    width:12%;    
+    width:130px;    
     align-self: baseline;
 }
 
@@ -393,11 +393,11 @@ input::placeholder {
     width:1px;
     height:1.2rem;
     background-color:#bebebe;
-    margin:0 1.7rem 0 0.5rem;
+    margin:0 1.7rem;
 }
 
 .roll{
-    width:40%;
+    /* width:40%; */
     height:50px;
     overflow: hidden;
 }
@@ -428,12 +428,15 @@ input::placeholder {
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
+
 }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  /* background: #fff; */
+  display: flex;
+  flex-wrap: wrap;
 
   /* Center slide text vertically */
   display: -webkit-box;
@@ -448,6 +451,7 @@ input::placeholder {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+  margin-top: 2.1rem;
 }
 
 .swiper-slide>p:nth-of-type(1){
@@ -468,7 +472,6 @@ input::placeholder {
   height: 100%;
   object-fit: cover;
 }
-
 
 .swiper-pagination>span{
   background:#fff;
@@ -688,10 +691,6 @@ input::placeholder {
   width:100%;
 }
 /* 스와이퍼 */
-.swiper2 {
-  width: 100%;
-  /* height: 100%; */
-}
 
 .swiper-slide {
   text-align: center;
@@ -699,21 +698,20 @@ input::placeholder {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
   cursor: pointer;
+  border-radius: 10px;
 }
 
-/* @media (max-width: 760px) {
-  .swiper-button-next {
-    right: 20px;
-    transform: rotate(90deg);
-  }
 
-  .swiper-button-prev {
-    left: 20px;
-    transform: rotate(90deg);
-  }
-} */
+.swiper-slide>img {
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.swiper2 {
+  width: 100%;
+  /* height: 100%; */
+}
 
 .swiper3{
   display: none;
@@ -740,9 +738,10 @@ input::placeholder {
 /* 스와이퍼 끝 */
 
 
-.menu_item{
-  cursor:pointer;
-  width:36.1rem;
+.item_text{
+  width:100%;
+  background-color: #F5ECE4;
+  text-align: left !important;
 }
 
 .item_text_title{
@@ -751,6 +750,7 @@ input::placeholder {
   font-weight: 700;
   color:#212121;
   margin-top: 10px;
+  
 }
 
 .item_text_much{
@@ -766,6 +766,10 @@ input::placeholder {
   color:#212121;
 }
 
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color:#000;
+}
 
 
 

@@ -65,7 +65,7 @@
       width:1px;
       height:1.2rem;
       background-color:#bebebe;
-      margin:0 10px 0 10px;
+      /* margin:0 10px 0 10px; */
   }
   
   .roll{
@@ -104,7 +104,8 @@
   .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    /* margin-top: 1.5rem; */
+    /* background: #fff; */
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -168,7 +169,7 @@
   }
   
   .left_title{
-      /* width:130px;     */
+      width:130px;    
       align-self: baseline;
   }
   
@@ -182,11 +183,11 @@
       width:1px;
       height:1.2rem;
       background-color:#bebebe;
-      margin:0 10px 0 10px;
+      margin:0 10px 0 1px;
   }
   
   .roll{
-      /* width:360px; */
+      width:360px;
       height:50px;
       overflow: hidden;      
   }
@@ -215,13 +216,13 @@
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
-    margin-top:2.2rem;
+    margin-top:0.2rem;
   }
   
   .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    /* background: #fff; */
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -475,7 +476,7 @@
 }
 
 .item_text_much>span{
-  font-size:1.4rem;
+  font-size:1.8rem;
   font-weight:700;
   color:#212121;
 }
