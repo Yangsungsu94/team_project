@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: 'Rubik', sans-serif;
+  }
+  
+  body {
+    background-color: #FBF5F0;
+  }
+  
+  ul,
+  ol,
+  li {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  
+
+  @media (min-width:901px) and (max-width:1600px){
+    /* /메인슬라이더 */
+    #content{
+        width:100%;
+    }
+    
+    .content_inner{
+        width:80%;
+        margin:0 auto;
+        padding-top:18rem;
+    }
+    
+    .left_nav{
+        width:100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    .left_title{
+        width:130px;    
+        align-self: baseline;
+    }
+    
+    .left_title>span{
+        font-weight: 800;
+        font-size:2.6rem;
+        line-height: 50px;
+    }
+    
+    .left_title_bar{
+        width:1px;
+        height:1.2rem;
+        background-color:#bebebe;
+        margin:0 1.7rem 0 0.5rem;
+    }
+    
+    .roll{
+        width:360px;
+        height:50px;
+        overflow: hidden;
+    }
+    
+    .roll_list{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    .roll_list>li{
+        line-height: 50px;
+        height:50px;
+        display: flex;
+        align-items: center;    
+    }
+    
+    .roll_list a{
+        font-size:1.6rem;
+        font-weight:700;
+        color:#212121;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        margin-top: 2.6rem;
+      }
+      
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      
+      .swiper-slide>p:nth-of-type(1){
+        position: absolute;
+        left:25%;
+        top:50%;
+        transform: translate(-50%, -50%);
+        color:#fff;
+        font-size:3.6rem;
+        font-weight:700;
+        line-height:1.4;
+        font-family: 'NanumSquareRound', 'Noto Sans KR', sans-serif;
+        text-align: left !important;
+      }
+      
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        
+        object-fit: cover;
+      }  
+      
+      .swiper-pagination>span{
+        background:#fff;
+      }
+}
