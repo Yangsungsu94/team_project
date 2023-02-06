@@ -5,62 +5,9 @@ function slide() {
         $(".roll_list").css({ marginTop: 0 });
     });
 };
-
 setInterval(slide, 3000);
+
 // 위로슬라이드 끝
-
-// $(function () {
-//     var page = 0;
-//     $(".prev_all").addClass('svg_color');
-//     $(".prev_all").click(function () {
-//         page--;
-//         $(".next_all").removeClass('svg_color');
-//         if (page < 0) {
-//             page = 0;
-//             $(this).addClass('svg_color');
-//             return;
-//         }
-//         $(".all_menu_list").stop().animate({ marginLeft: "-390" * page }, "fast");
-//     });
-
-//     $(".next_all").click(function () {
-//         page++;
-//         $(".prev_all").removeClass('svg_color');
-//         if (page > $(".all_menu_list .menu_item").length - 3) {
-//             $(this).addClass('svg_color');
-//             page = $(".all_menu_list .menu_item").length - 3;
-//             return;
-//         }
-//         $(".all_menu_list").stop().animate({ marginLeft: "-180" * page }, "fast");
-//     });
-// });
-
-// 세트메뉴
-// $(function () {
-//     var page = 0;
-//     $("#Layer_2").addClass('svg_fill_color');
-//     $("#Layer_2").click(function () {
-//         page--;
-//         $("#Layer_1").removeClass('svg_fill_color');
-//         if (page < 0) {
-//             page = 0;
-//             $(this).addClass('svg_fill_color');
-//             return;
-//         }
-//         $(".set_menu_list").stop().animate({ marginLeft: "-390" * page }, "fast");
-//     });
-
-//     $("#Layer_1").click(function () {
-//         page++;
-//         $("#Layer_2").removeClass('svg_fill_color');
-//         if (page > $(".set_menu_list .menu_item").length - 3) {
-//             $(this).addClass('svg_fill_color');
-//             page = $(".set_menu_list .menu_item").length - 3;
-//             return;
-//         }
-//         $(".set_menu_list").stop().animate({ marginLeft: "-390" * page }, "fast");
-//     });
-// });
 
 // menu_select
 
